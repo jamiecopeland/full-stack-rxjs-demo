@@ -27,7 +27,8 @@
     "start-foreign-api-server": "babel-watch src/servers/foreignAPIServer.js",
     "start-local-api-server": "babel-watch src/servers/localAPIServer.js",
     "start-socket-server": "babel-watch src/servers/socketServer.js",
-    "start": "concurrently \"npm run start-foreign-api-server\" \"npm run start-local-api-server\" \"npm run start-socket-server\" \"npm run start-webpack\""
+    "start": "concurrently \"npm run start-foreign-api-server\" \"npm run start-local-api-server\" \"npm run start-socket-server\" \"npm run start-webpack\"",
+    "start-production": "NODE_ENV=production PORT=3000 npm start"
   },
   "dependencies": {
     "babel-cli": "^6.4.0",
